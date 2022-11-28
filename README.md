@@ -17,5 +17,5 @@ Live view by clicking the badge: [![Netlify Status](https://api.netlify.com/api/
 
 ## Installation
 
-1. Clone the project and install the dependencies `npm install`
+1. Clone the project and install the dependencies `yarn install`
 2. Run the project `yarn start`
