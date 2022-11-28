@@ -8,17 +8,16 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: 'main.js',
   },
-  target: 'web',
-  devServer: {
-    port: '3000',
-    static: ['./public'],
-    open: true,
-    hot: true,
-    liveReload: true,
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.ts'],
+    modules: ['node_modules'],
+    extensions: ['.js', '.jsx', '.json'],
   },
+  target: ['web', 'es5'],
   module: {
     rules: [
       {
