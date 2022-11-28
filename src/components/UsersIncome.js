@@ -64,16 +64,14 @@ const UsersIncome = ({ weeklyIncome, payPeriod }) => {
 
   if (!weeklyIncome.income) {
     return (
-      <div className="w-full mt-12 h-72 mb-2">
-        <div className="w-full h-full rounded flex justify-center items-center bg-lightGray font-semibold text-slate-500">
-          <p>Please enter your income data first</p>
-        </div>
+      <div className="w-full min-h-[288px] mt-11 h-full rounded flex justify-center items-center bg-lightGray font-semibold text-slate-500">
+        <p>Please enter your income data first</p>
       </div>
     );
   }
 
   return (
-    <div className="relative w-full mt-12 sm:h-72 mb-2">
+    <div className="relative w-full mt-12 mb-2">
       <PDFDownloadLink
         document={
           <PDFdoc

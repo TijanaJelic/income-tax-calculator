@@ -5,14 +5,11 @@ import './app.css';
 
 const App = () => {
   const [activeCard, setActiveCard] = useState('Income Details');
-  const [weeklyIncome, setWeeklyIncome] = useState({
-    income: 1000,
-    incomeType: 'Gross income',
-  });
+  const [weeklyIncome, setWeeklyIncome] = useState({});
   const [payPeriod, setPayPeriod] = useState('weekly');
 
   return (
-    <div className="relative w-11/12 max-w-xl h-auto m-auto my-24 px-4 py-2 sm:px-9 sm:py-5 bg-white rounded-lg drop-shadow-md relative body-font font-poppins">
+    <div className="relative w-11/12 max-w-xl max-h-xl h-auto m-auto my-24 px-4 py-2 sm:px-9 sm:py-5 bg-white rounded-lg drop-shadow-md relative body-font font-poppins">
       <div className="absolute -top-10 left-0 font-medium">
         <button
           onClick={() => setActiveCard('Income Details')}
@@ -39,7 +36,7 @@ const App = () => {
         </h1>
       </div>
 
-      <div className="">
+      <div className="h-full">
         {activeCard === 'Income Details' ? (
           <IncomeDetails
             setWeeklyIncome={setWeeklyIncome}
