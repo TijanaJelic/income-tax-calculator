@@ -1,7 +1,8 @@
 # Income Tax Calculator
 
 This calculator is for checking gross and net income.
-The project is configured **from scratch**.
+
+This project does not use create-react-app. It is configured **from scratch** with webpack.
 
 Project includes:
 
